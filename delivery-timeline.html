@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Tracking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .tracking-header {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .tracking-timeline {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .timeline-step {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 33%;
+        }
+        .timeline-icon {
+            width: 30px;
+            height: 30px;
+            background-color: #000;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .timeline-icon img {
+            width: 15px;
+            height: 15px;
+            filter: invert(1);
+        }
+        .timeline-date {
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .timeline-label {
+            font-size: 12px;
+            color: #666;
+        }
+        .timeline-line {
+            flex-grow: 1;
+            height: 2px;
+            background-color: #000;
+            margin: 0 10px;
+        }
+        .additional-info {
+            display: flex;
+            justify-content: space-between;
+        }
+        .info-box {
+            background-color: #f0f0f0;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+        }
+        .info-box img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tracking-header">
+        01-07 Oct Estimated arrival
+    </div>
+    <div class="tracking-timeline">
+        <div class="timeline-step">
+            <div class="timeline-icon">
+                <img src="/api/placeholder/15/15" alt="Order placed">
+            </div>
+            <div class="timeline-date">29 Sep</div>
+            <div class="timeline-label">Order placed</div>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="timeline-step">
+            <div class="timeline-icon">
+                <img src="/api/placeholder/15/15" alt="Order dispatches">
+            </div>
+            <div class="timeline-date">29 Sep - 02 Oct</div>
+            <div class="timeline-label">Order dispatches</div>
+        </div>
+        <div class="timeline-line"></div>
+        <div class="timeline-step">
+            <div class="timeline-icon">
+                <img src="/api/placeholder/15/15" alt="Delivered">
+            </div>
+            <div class="timeline-date">01-07 Oct</div>
+            <div class="timeline-label">Delivered!</div>
+        </div>
+    </div>
+    <div class="additional-info">
+        <div class="info-box">
+            <img src="/api/placeholder/20/20" alt="Free Shipping">
+            Free Shipping
+        </div>
+        <div class="info-box">
+            <img src="/api/placeholder/20/20" alt="30-Day Money Back">
+            30-Day Money Back
+        </div>
+    </div>
+</body>
+</html>
