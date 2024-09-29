@@ -30,8 +30,8 @@
             width: 33%;
         }
         .timeline-icon {
-            width: 30px;
-            height: 30px;
+            width: 50px;
+            height: 50px;
             background-color: #000;
             border-radius: 50%;
             display: flex;
@@ -40,8 +40,8 @@
             margin-bottom: 10px;
         }
         .timeline-icon img {
-            width: 15px;
-            height: 15px;
+            width: 26px;
+            height: auto;
             filter: invert(1);
         }
         .timeline-date {
@@ -64,55 +64,68 @@
         }
         .info-box {
             background-color: #f0f0f0;
-            padding: 10px 20px;
-            border-radius: 5px;
+            padding: 20px 20px;
+            border-radius: 8px;
             display: flex;
+            justify-content: center;
             align-items: center;
             font-size: 14px;
+            width: 42%;
+            text-align: center;
         }
         .info-box img {
-            width: 20px;
-            height: 20px;
+            width: 40px;
             margin-right: 10px;
         }
+
+        .tracking-header {
+            font-size: 32px;
+            font-weight: normal;
+        }
+
+        .tracking-header small {
+            font-size: 16px;
+            color: #666;
+        }
+        
     </style>
 </head>
 <body>
     <div class="tracking-header">
-        01-07 Oct Estimated arrival
+        01-07 Oct <small>Estimated arrival</small>
     </div>
     <div class="tracking-timeline">
         <div class="timeline-step">
             <div class="timeline-icon">
-                <img src="/api/placeholder/15/15" alt="Order placed">
+                <img src="images/calnder.png" alt="Order placed">
             </div>
-            <div class="timeline-date">29 Sep</div>
+            <div class="timeline-date">30 Sep</div>
             <div class="timeline-label">Order placed</div>
         </div>
         <div class="timeline-line"></div>
         <div class="timeline-step">
             <div class="timeline-icon">
-                <img src="/api/placeholder/15/15" alt="Order dispatches">
+                <img src="images/van.png" alt="Order dispatches">
             </div>
-            <div class="timeline-date">29 Sep - 02 Oct</div>
+            <div class="timeline-date">30 Sep - 03 Oct</div>
             <div class="timeline-label">Order dispatches</div>
         </div>
         <div class="timeline-line"></div>
         <div class="timeline-step">
             <div class="timeline-icon">
-                <img src="/api/placeholder/15/15" alt="Delivered">
+                <img src="images/box.png" alt="Delivered">
             </div>
-            <div class="timeline-date">01-07 Oct</div>
+            <div class="timeline-date">02-08 Oct</div>
             <div class="timeline-label">Delivered!</div>
         </div>
     </div>
     <div class="additional-info">
         <div class="info-box">
-            <img src="/api/placeholder/20/20" alt="Free Shipping">
+            <img src="images/van.png" >
             Free Shipping
         </div>
         <div class="info-box">
-            <img src="/api/placeholder/20/20" alt="30-Day Money Back">
+            <img src="images/return.png" >
             30-Day Money Back
         </div>
     </div>
